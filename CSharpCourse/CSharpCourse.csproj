@@ -38,6 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Basics\" />
+    <Folder Include="Intermediate\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -174,22 +174,23 @@ namespace CSharpCourse.Basics
             list.Remove(1);
             // Count
             _ = list.Count;
-            foreach (var number in list)
+            try
             {
-                if (number == 5)
+                foreach (var number in list)
                 {
-                    try
+                    if (number == 5)
                     {
                         list.Remove(number); // unhandled exception application crash
                         // in c# we don't allow modify collection inside foreach loop
                         // solved by using simple for loop
                     }
-                    catch (Exception e)
-                    {
-                        Console.WriteLine(e.Message);
-                    }
                 }
+
+            } catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
             }
+            
 
             for (int i = 0; i < list.Count; i++)
             {
@@ -290,6 +291,46 @@ namespace CSharpCourse.Basics
             Console.WriteLine("File Name : "+ Path.GetFileName(defaultPath));
             Console.WriteLine("File Name Without Extension : "+ Path.GetFileNameWithoutExtension(defaultPath));
             Console.WriteLine("Directory Name : "+ Path.GetDirectoryName(defaultPath));
+        }
+    }
+
+    public class Logic
+    {
+        public void GetSmallests(List<int> numbers, int count)
+        {
+            if(numbers == null)
+            {
+                throw new ArgumentNullException(nameof(numbers), "list is null");
+            }
+            if(count > numbers.Count || count <= 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(count), "count must be between 1 and list count");
+            }
+            var smallest = new List<int>();
+            while(smallest.Count < count)
+            {
+                var min = GetSmallest(numbers);
+                smallest.Add(min);
+                numbers.Remove(min);
+            }
+
+            foreach (var min in smallest)
+            {
+                Console.WriteLine(min);
+            }
+        }
+
+        public int GetSmallest(List<int> numbers)
+        {
+            var min = numbers[0];
+            for (int i = 1; i < numbers.Count; i++)
+            {
+                if(numbers[i] < min)
+                {
+                    min = numbers[i];
+                }
+            }
+            return min;
         }
     }
 }

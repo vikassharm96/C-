@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using CSharpCourse.Basics;
 
 namespace CSharpCourse
@@ -25,7 +26,10 @@ namespace CSharpCourse
 
             var workingWith = new WorkingWith();
             workingWith.DateTimeEg();
-            workingWith.FilesEg();
+            //workingWith.FilesEg();
+
+            var logic = new Logic();
+            logic.GetSmallests(new List<int>() { 2, 1, 6, 9, 3, 4, 8 }, 3);
         }
     }
 }
