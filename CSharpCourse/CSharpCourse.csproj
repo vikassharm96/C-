@@ -35,6 +35,10 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Basics\CSharpBasics.cs" />
+    <Compile Include="Intermediate\Customer.cs" />
+    <Compile Include="Intermediate\Order.cs" />
+    <Compile Include="Intermediate\Point.cs" />
+    <Compile Include="Intermediate\HttpCookie.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Basics\" />
