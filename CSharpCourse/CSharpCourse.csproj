@@ -39,6 +39,19 @@
     <Compile Include="Intermediate\Order.cs" />
     <Compile Include="Intermediate\Point.cs" />
     <Compile Include="Intermediate\HttpCookie.cs" />
+    <Compile Include="Intermediate\PresentationObject.cs" />
+    <Compile Include="Intermediate\Text.cs" />
+    <Compile Include="Intermediate\Logger.cs" />
+    <Compile Include="Intermediate\DbMigrator.cs" />
+    <Compile Include="Intermediate\Installer.cs" />
+    <Compile Include="Intermediate\Vehicle.cs" />
+    <Compile Include="Intermediate\Car.cs" />
+    <Compile Include="Intermediate\Shape.cs" />
+    <Compile Include="Intermediate\Circle.cs" />
+    <Compile Include="Intermediate\ShapeType.cs" />
+    <Compile Include="Intermediate\Canvas.cs" />
+    <Compile Include="Intermediate\Position.cs" />
+    <Compile Include="Intermediate\Rectangle.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Basics\" />

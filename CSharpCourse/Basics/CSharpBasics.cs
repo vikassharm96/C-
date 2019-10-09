@@ -356,3 +356,4 @@ namespace CSharpCourse.Basics
 // allocated on stack, memory allocation done automatically, immediately removed when out of scope
 // 2. Classes - arrays, strings, custom class - Reference Types
 // need to allocate memory, memory allocated on heap, garbage collected by CLR
+// object class is the base of all classes in .Net framework.
