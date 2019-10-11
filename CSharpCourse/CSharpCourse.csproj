@@ -52,6 +52,9 @@
     <Compile Include="Intermediate\Canvas.cs" />
     <Compile Include="Intermediate\Position.cs" />
     <Compile Include="Intermediate\Rectangle.cs" />
+    <Compile Include="Intermediate\OrderProcessor.cs" />
+    <Compile Include="Intermediate\ShippingCalculator.cs" />
+    <Compile Include="Intermediate\Shipment.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Basics\" />
